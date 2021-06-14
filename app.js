@@ -14,6 +14,7 @@ var new2Router =require('./routes/new2');
 var new3Router =require('./routes/new3');
 var new4Router =require('./routes/new4');
 var new5Router =require('./routes/new5');
+var daleteRouter =require('./routes/dalete');
 var session = require('express-session');
 
 var app = express();
@@ -41,7 +42,8 @@ app.use('/new1',new1Router);
 app.use('/new2',new2Router);
 app.use('/new3',new3Router);
 app.use('/new4',new4Router);
-app.use('/new5',new5Router);
+app.use('/new5',new5Router);//后台
+app.use('/dalete',daleteRouter);//删除
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

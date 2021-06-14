@@ -17,12 +17,13 @@
     <table>
         <thead>
         <tr>
-            <td colspan="3"></td>
+            <td colspan="4"></td>
         </tr>
         <tr>
             <td>姓名<span class="upBtn"></span><span class="downBtn"></span></td>
             <td>明码<span class="upBtn"></span><span class="downBtn"></span></td>
             <td>身份<span class="upBtn"></span><span class="downBtn"></span></td>
+            <td>操作<span class="upBtn"></span><span class="downBtn"></span></td>
         </tr>
         </thead>
         <tbody>
@@ -31,6 +32,7 @@
 				<td><%=o.name%></td>
 				<td><%=o.possword%></td>
 				<td><%=o.type%></td>
+                <td><input href="/dalete" type="button" value="删除" /><input type="button" value="修改" /></td>
 			</tr>
 			<% }) %>
 		</tbody> 
